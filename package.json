@@ -1,0 +1,17 @@
+{
+  "name": "avirofy-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Avirofy: plataforma para que dropshippers de Dropi envíen sus pedidos de entrega local en Nuevo León.",
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "DROPI_MODE=mock node --disable-warning=ExperimentalWarning --watch src/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/*.test.js",
+    "crear-usuario": "node --disable-warning=ExperimentalWarning scripts/crear-usuario.js"
+  },
+  "dependencies": {
+    "express": "5.1.0"
+  }
+}
